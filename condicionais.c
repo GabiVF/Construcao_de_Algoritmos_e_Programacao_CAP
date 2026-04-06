@@ -27,5 +27,5 @@ int main(void){
     else{
         printf("sem x\n");
     }
-    
+    return 0;
 }
