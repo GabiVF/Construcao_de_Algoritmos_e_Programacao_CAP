@@ -53,10 +53,10 @@ int main(){
         printf("%d\n", j);
     }
     //for sem variavel e incremento
-    int j = 10;
-    for(; j<15;){
-        j++;
-        printf("%d", j);
+    int k = 10;
+    for(; k<15;){
+        k++;
+        printf("%d", k);
     }
 
     //loop infinito
