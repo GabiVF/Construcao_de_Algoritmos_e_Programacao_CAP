@@ -200,18 +200,19 @@ int main(){
     int dias = 0;
     int dias_totais = 0;
     double porcentagem;
+    
+    while (velocidade != -1.0){
+        printf("Qual foi a velocidade media do carro?")
+        scanf("%lf", &velocidade);
+        if (velocidade > 80.0){
+            dias++;
+            dias_totais++;
 
-    printf("Qual foi a velocidade media do carro?")
-    scanf("%lf", &velocidade);
-    if (velocidade == -1.0){
-        break;
-    }else if (velocidade > 80.0){
-        dias++;
+        } else {
         dias_totais++;
-
-    } else {
-        dias_totais++;
+        }
     }
+    
     porcentagem = (dias /dias_totais) * 100;
     printf("A porcentagens de dias que a media da velocidade média foi maior que 80.0 é %lf", porcentagem);
 
