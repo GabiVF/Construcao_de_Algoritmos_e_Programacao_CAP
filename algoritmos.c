@@ -212,8 +212,11 @@ int main(){
         dias_totais++;
         }
     }
-    
-    porcentagem = (dias /dias_totais) * 100;
+    //(double) em parenteses transform/coverte o int em um double
+    /*
+    100.0 * dias / dias_totais --> funcionaria pq a divisão não seria mais por interios
+    */
+    porcentagem = (double) dias /dias_totais * 100;
     printf("A porcentagens de dias que a media da velocidade média foi maior que 80.0 é %lf", porcentagem);
 
 
