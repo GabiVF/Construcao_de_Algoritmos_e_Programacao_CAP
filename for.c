@@ -68,6 +68,18 @@ int main(){
     for(int i; i < 20; i+2)
         printf("oi\n");
  return 0;
-    
- 
+    //Sem as chaves o comando é limitado para uma unica linha de ação
+    //assim: isso funciona corretamente 
+    if(i>10)
+    printf("i maior que 10");
+    else 
+    printf("i menor que 10");
+
+    //isso não funciona corretamente
+
+    if(i>10)
+    printf("i maior que 10");
+    pirntf("i é o numero %d", numero);
+    /*Não funciona pois há mais de um comando dentro do if sem as chaves 
+    e apenas o primeiro comando é lido*/
 }
