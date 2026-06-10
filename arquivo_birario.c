@@ -36,11 +36,12 @@ int main(void){
     int i1;
 
     fread(&d1, sizeof(d1), 1, arquivo); //lê o valor de d do arquivo e armazena na variável d1
-    fread(&d2, sizeof(d2), 1, arquivo); //lê o valor de d do arquivo e armazena na variável d2
-    fread(&i1, sizeof(i1), 1, arquivo); //lê o valor de i do arquivo e armazena na variável i1
-
     printf("Valor de d1: %lf\n", d1); //imprime o valor de d1
+    
+    fread(&d2, sizeof(d2), 1, arquivo); //lê o valor de d do arquivo e armazena na variável d2
     printf("Valor de d2: %lf\n", d2); //imprime o valor de d2
+
+    fread(&i1, sizeof(i1), 1, arquivo); //lê o valor de i do arquivo e armazena na variável i1
     printf("Valor de i1: %d\n", i1); //imprime o valor de i1
 
     fclose(arquivo);
