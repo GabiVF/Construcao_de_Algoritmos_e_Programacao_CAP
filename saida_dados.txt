@@ -1,0 +1,2 @@
+Soma dos valores: 280
+Média dos valores: 40.00
